@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facebook Marketplace Clone</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			background-color: #1877f2;
+			color: white;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.navbar {
+			background-color: #f1f1f1;
+			padding: 10px;
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.marketplace-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			padding: 20px;
+		}
+
+		.marketplace-item {
+			background-color: white;
+			border: 1px solid #ddd;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+			margin: 10px;
+			padding: 10px;
+			
+			
+		}
+
+		.marketplace-item img {
+			width: 300px;
+			height: 200px;
+		}
+
+		.marketplace-item h3 {
+			margin: 10px 0;
+			font-size:18px;
+			
+		}
+		
+
+		.marketplace-item p {
+			margin: 0;
+		}
+
+		.footer {
+			background-color: #f1f1f1;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Facebook Marketplace</h1>
+	</div>
+
+	<div class="navbar">
+		<div>Home</div>
+		<div>Categories</div>
+		<div>Sell</div>
+		<div>Help</div>
+	</div>
+
+	<div class="marketplace-container">
+		<div class="marketplace-item">
+			<img src="data:image/jpeg;base64,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" alt="Marketplace item">
+			<h3>Original Apple Earbirds  </h3>
+			<p>₹ 1,199/-</p>
+		</div>
+		<div class="marketplace-item">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwRoz6ezx9RFjVHu7BfeOkkC6wvo8yxCMr_8u_W8NQQw&s" alt="Marketplace item">
+			<h3>Infant Kids Baby Shoes </h3>
+			<p>₹ 1,100/-</p>
+		</div>
+		<div class="marketplace-item">
+			<img src="https://i.pinimg.com/originals/3e/be/d7/3ebed78ecb3af490d768986a3c898a6a.jpg" alt="Marketplace item">
+			<h3>Latest top for girls </h3>
+			<p>₹ 1,500/- And above</p>
+		</div>
+		<div class="marketplace-item">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX2tRUAOSJ0TKski-MtGu55Wtq5hWdY6mkNfQK_OlBbh7Y7AFALSSrRQ3-V-c-KWYjc20&usqp=CAU" alt="Marketplace item">
+			<h3>Bags for Girls</h3>
+			<p>₹ 2000/- And above</p>
+		</div>
+		<div class="marketplace-item">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSMiDMJLVzx_FZreXARnETwx6e3MavOTq7S7Tk3oc-H8mmDwWmiT91_aBcRFYVr1mhjM4&usqp=CAU" alt="Marketplace item">
+			<h3>Flybay Kids Makeup Kit </h3>
+			<p>₹ 1,100/-</p>
+		</div>
+		<div class="marketplace-item">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW0KFSDodrA6jw6USiifKu7D8yoND9ZxiTAQ&s" alt="Marketplace item">
+			<h3>Mobile Covers</h3>
+			<p>₹ 150/-</p>
+		</div>
+		<div class="marketplace-item">
+			<img src="https://staranddaisy.in/wp-content/uploads/2022/04/204627fsd.jpg" alt="Marketplace item">
+			<h3> Girls Party Dresses </h3>
+			<p>₹ 2,100/-</p>
+		</div>
+		<div class="marketplace-item">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPF29xKea9WrgBDZXW34yHwNiDvziq_G_emA&s" alt="Marketplace item">
+			<h3>Wrist Watch</h3>
+			<p>₹ 2000/-</p>
+		</div>

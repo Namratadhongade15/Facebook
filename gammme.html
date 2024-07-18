@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Facebook Gaming Page </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+		
+		nav .nav-right .profile, .container .left-panel .profile{
+		background: url('./images/dp.jpg');
+		height:30px;
+		width:30px;
+		background-size: cover;
+		border-radius: 50%;
+	}
+        #header {
+            background-color: #3b5998;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+			width:1500px;	
+        }
+
+        #container {
+            width: 1430px;
+			height: 1000px;
+            margin: 0 ;
+            padding: 20px;
+			background-color:;
+        }
+		 
+        #games {
+            display:flex;
+			flex-direction:row;
+			justify-content:space-between;
+			width:350px;
+            margin-top: 20px;
+			background-color:;
+        }
+		 #games :hover{
+			width:400px;
+			z-index:-1;
+			align-items:center;
+			
+			}
+				
+        .game {
+           
+            padding: 10px;
+			
+            text-align: center;
+			background-color:#ddd;
+			width:100%;
+			height:390px;	
+        
+		 .game:hover {
+			width:200px;
+			
+			}
+        .game img {
+            width: 100%;
+			background-color:yellow;
+        }
+		 
+        .game h2 {
+            margin: 0px 0;
+        }
+		
+    </style>
+</head>
+<body>
+    <div style="position:fixed;" id="header">
+        <h1>Facebook Gaming</h1>
+    </div>
+	
+	<div style="float:left;width:15%;position:fixed;margin-top:10%;	height:400px;overflow-x:scroll;"class="left-panel">
+            <ul style="list-style:none;">
+                <li>
+                    <span class="profile"></span>
+                    <p style="font-size:25px;"><b>Gaming</b></p>
+                </li>
+                
+                <li>
+                  <b>  <i style="font-size:20px;float:left;"class="ri-gamepad-line"></b></i>
+                    <p > Play Videos</p>
+                </li>
+                <li>
+                  <b>  <i style="font-size:20px;float:left;margin-top:4%;" class="ri-notification-fill"></b></i>
+                    <p style="padding-top:8%;">Notification</p>
+                </li>
+				<hr>
+              
+                <li>
+                    <b><i style="font-size:20px;float:left;margin-top:4%;"  class="ri-game-fill"></b></i>
+                    <p style="padding-top:7%;">AHA</p>
+                </li>
+                <li>
+                   <b> <i  style="font-size:20px;float:left;"class="ri-heart-add-2-fill"></b></i>
+                    <p style="padding-top:7%;">Save Games</p>
+                </li>
+				<hr>
+                <li>
+                    
+                    <p style="font-size:25px;"><b>Categories</b></p>
+                </li>
+                <li>
+                 <b>  <i style="font-size:20px;float:left;"class="ri-gamepad-fill"></b></i>
+                    <p style="padding-top:5%;"> All games</p>
+                </li>
+                
+            </ul>
+            
+        </div>
+    <div  style="width:80%;height:1900px;overflow-y:hidden;margin-left:13%;:fixed;"id="container">
+        <h2 style="margin-left:8%;margin-top:10%;">Featured Games</h2>
+        <div style="width:40%;margin-left:6%;"id="games">
+            <div style="margin-left:6%;"class="game">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0gyG1FNj9TAdjtlwdMEvvGNfrI2x2rG6uag&s" alt="Game 1">
+                <h2>Car Race 3D</h2>
+                <p>Car Race 3D: Super-fun car racing game on mobile! Are you looking for the thrill of driving luxury supercars, engaging in fast, </p>
+            </div>
+            <div style="margin-left:6%;"class="game">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0gyG1FNj9TAdjtlwdMEvvGNfrI2x2rG6uag&s" alt="Game 2">
+                <h2>Farm Merge Valley</h2>
+                <p>Farm Merge Valley is a casual farming game where you merge various animals and objects to upgrade them. </p>
+            </div>
+            <div  style="margin-left:6%;"class="game">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqFDhlQFSI08hQEa3FwGNdml8YNfiajYCeg&s" alt="Game 3">
+                <h2>Hill Climb Racing</h2>
+                <p>Hill Climb Racing is the perfect combination of physics and distance in an arcade or car game genre. Developed by Fingersoft, this driving game requires you...</p>
+            </div>
+			
+			 
+			
+            <!-- Add more games as needed -->
+        </div>
+		
+		
+		
+		<div style="margin-left:8%"id="container">
+        <h2>More Games To Played</h2>
+        <div id="games">
+            <div style="margin-left:10%;"class="game">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOrqEg6bylgNrGW7Yhy50uGVYi4NnSzwik7Q&s" alt="Game 1">
+                <h2>Sky Rider</h2>
+                <p>Sky Riders is a 3D casual racing game where you get to test your driving prowess on a bunch of intricate tracks. Navigate your vehicle along the treacherous sides of the track, where one wrong move can send you plummeting down.</p>
+            </div>
+            <div style="margin-left:6%;"class="game">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjZZYyZY5LjaLu14tr7OUugIsGkWBpjwoBJw&s" alt="Game 2">
+                <h2>Free Fire</h2>
+                <p>Free Fire is a multiplayer battle royale mobile game, developed and published by Garena for Android and iOS. Battle in Style and be the last survivor!</p>
+            </div>
+            <div  style="margin-left:6%;"class="game">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyU7GwVK0bCzM5sahRB54hCg36JjMMNzqa7yHM3Li1d8uyn8rbiRwWXrAgFFU7rKq8kgE&usqp=CAU" alt="Game 3">
+                <h2>Pubg</h2>
+                <p>PUBG: BATTLEGROUNDS is a battle royale that pits 100 players against each other. Outplay your opponents to become the lone survivor. Play free now!</p>
+            </div>
+			 
+			 
+			
+            
+        </div>
+    </div>
+	
+	
+	
+	
+	
+</body>
+</html>
